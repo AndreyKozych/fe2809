@@ -5,8 +5,6 @@ body {
     font-style: normal;
   }
 
-
-
   .calendar {
     padding: 80px 50px 150px 50px;
     
@@ -30,7 +28,6 @@ body {
 
 
   }
-
   .calendar__month {
       display: flex;
       justify-content: space-between;
@@ -39,15 +36,8 @@ body {
       font-weight: 500;
       font-size: 36px;
       line-height: 42px;
-
-      
-    
-    
-    
-    color: #FFFFFF;
-
-
-  }
+      color: #FFFFFF;
+      }
 
   /* линия */
   .calendar__month::after {
@@ -110,12 +100,6 @@ body {
   position: relative;
   text-align: center;
   
-
-}
-
-.week__one__item {
-list-style: none;
-display: flex;
 
 }
 
