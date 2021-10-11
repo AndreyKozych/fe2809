@@ -1,14 +1,14 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif; 
     font-style: normal;
   }
 
 
 
   .calendar {
-    padding: 30px 50px 150px 50px;
+    padding: 80px 50px 150px 50px;
     
     position: relative;
     left: 60%;
@@ -22,11 +22,25 @@ body {
   }
 
   /* calendar month */
+  .march__color:hover, .march__color:focus {
+    transform: scale(1.20);
+  border-bottom-color: currentColor;
+  outline: none;
+  cursor: pointer;
+
+
+  }
+
   .calendar__month {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 42px;
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 42px;
+
+      
     
     
     
@@ -43,32 +57,37 @@ body {
     height: 2px;
     background: #000000;
     opacity: 0.17;
-    top: 120px;
+    top: 200px;
     left: 50%;
     transform: translateX(-50%);
+    
 }
 
 /* calendar day */
 
 .days {
+  padding-left: 60px;
     
 
   display: flex;
-  list-style-type: none;
+
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
+  
   text-align: center;
   color: #FFFFFF;
+  max-width: 500px;
     
 }
 .days li {
   width: 56px;
   height: 56px;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   
 }
 .days__item  {
@@ -78,19 +97,19 @@ body {
 }
 
 .days__item__title  {
-    padding: 110px 10px 10px 10px;
+   padding-top: 110px;
     color: rgba(255, 255, 255, 0.6);
 }
 
 
 
 
-/* week one */
+/* week */
 
-.week__one {
+.week {
   position: relative;
   text-align: center;
-
+  
 
 }
 
@@ -100,109 +119,34 @@ display: flex;
 
 }
 
-.week__one__item__title {
-  padding: 0 10px 10px 10px;
-   
-
-}
-
-/* week two */
-
-.week__two {
-  position: relative;
-  text-align: center;
-
-}
-.week__two__item {
-  list-style: none;
+.week__item {
+list-style: none;
 display: flex;
-
+flex-wrap: wrap;
+list-style: none;
+max-width: 400px;
 }
-.week__two__item__title {
-  padding: 0 10px 10px 10px;
-
-}
-
-
-/* week three */
-
-.week__three {
-  position: relative;
-  text-align: center;
-
-}
-.week__three__item {
-  list-style: none;
-display: flex;
-
-}
-.week__three__item__title {
-  padding: 0 10px 10px 10px;
- 
-
-}
-
-.week__three__item__title:nth-child(2) {
-  background: #3c82f9;
-  align-self: center;
-  border-radius: 50%;
- 
-  
-}
-.week__three__item__title:nth-child(3) {
-  background: #3c82f9;
-  align-self: center;
-  border-radius: 50%;
- 
-  
-}
-
-/* week four */
-
-.week__four {
-  position: relative;
-  text-align: center;
-
-}
-.week__four__item {
-  list-style: none;
-display: flex;
-
-}
-.week__four__item__title {
-  padding: 0 10px 10px 10px;
-
+.week_color:hover, .week_color:focus{
+  background: blue;
+    border-bottom-color: currentColor;
+    outline: none;
+    border-radius: 100%;
+    transform: scale(1.20);
+    cursor: pointer;
 }
 
 
-
-/* week five */
-
-.week__five {
-  position: relative;
-  text-align: center;
-
-}
-.week__five__item {
-  list-style: none;
-display: flex;
-
-}
-.week__five__item__title {
-  padding: 0 10px 10px 10px;
-
-}
-
-.week__five::after {
+.week__item::after {
   content: "";
   position: absolute;
-  width: 96%;
+  width: 120%;
   height: 2px;
   background: #000000;
   opacity: 0.17;
   bottom: -45px;
-  left: 53%;
+  left: 55%;
   transform: translateX(-50%);
+  
 }
 
 
@@ -212,10 +156,10 @@ display: flex;
   /* categories */
 .footer {
   font-family: 'Roboto', sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 26px;
-line-height: 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
   margin-top: 150px;
   max-width: 400px;
   
@@ -248,19 +192,35 @@ line-height: 30px;
   height: 50px;
   
   
+  
 }
-.finance{
+.finance {
   background: #8576ED;
   min-width: 200px;
   height: 80px;
   border-radius: 12px;
   align-self: center;
+  
+}
+
+.finance:hover, .finance:focus {
+  transform: scale(1.20);
+  border-bottom-color: currentColor;
+  outline: none;
+  cursor: pointer;
 }
 
 .management {
   background: #F39946;
   min-width: 200px;
   border-radius: 12px;
+  
+}
+.management:hover, .management:focus {
+  transform: scale(1.20);
+  border-bottom-color: currentColor;
+  outline: none;
+  cursor: pointer;
 }
 
 .design {
@@ -268,6 +228,14 @@ line-height: 30px;
   min-width: 200px;
   border-radius: 12px;
 }
+
+.design:hover, .design:focus {
+  transform: scale(1.20);
+  border-bottom-color: currentColor;
+  outline: none;
+  cursor: pointer;
+}
+
 
   
     
