@@ -6,6 +6,7 @@ body {
   }
 
   .calendar {
+    
     padding: 80px 50px 150px 50px;
     
     position: relative;
@@ -111,7 +112,7 @@ list-style: none;
 max-width: 400px;
 }
 .week_color:hover, .week_color:focus{
-  background: blue;
+  background: #3C82F9;;
     border-bottom-color: currentColor;
     outline: none;
     border-radius: 100%;
